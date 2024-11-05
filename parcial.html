@@ -444,7 +444,7 @@ function modificar() {
                             const index = vehiculos.findIndex(p => p.id == id);
                             if (index !== -1) {
                                 
-                                vehiculos[index] = { ...vehiculoActualizado }; 
+                                vehiculos[index] = { ...vehiculoActualizado, id: responseData.id }; 
                             }
 
                             actualizarLista(); 
